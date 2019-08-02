@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Phantasia </title>
+<meta charset="utf-8">
+<link rel="Shortcut icon" href="ikonka.png" />
+<link rel="stylesheet" type="text/css" href="szablon.css"/>
+<script language="JavaScript" type="text/javascript">
+function zegar(){
+    
+    now = new Date();
+    var hours = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    
+    if (hours < 10) hours = "0" + hours;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    
+    document.getElementById('czas').innerHTML = hours + ":" + min + ":" + sec;
+        
+    setTimeout("zegar()", 1000);
+}
+
+</script>
+<style type="text/css">
+p {padding: 20px;}
+h3{font-size: 24px;}
+h6{padding: 10px; font-size: 14px;}
+</style>
+</head>
+<body onload="javascript:zegar()">
+<span style="text-align:right; padding-top: 100px; color: white;"><h3 id="czas"></h3></span>
+
+	<div id="naglowek">
+	<h1><a href="index.html" style="color:white; text-decoration:none">Phantasia</a></h1>
+	</div>
+	
+	<div id="lista_gorna">
+	<ul class="gora" type="circle">
+		<li><a href="o_musicalu.html">O musicalu</a></li>
+		<li><a href="tworcy.html">O twórcach</a></li>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li>
+		<li><a href="utwory.html">Utwory z musicalu</a></li>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</ul>
+	</div>
+	
+	<div id="lista" class="film">
+	<ul class="bok" type="circle">
+	<b>
+		<li><a href="o_musicalu.html">O musicalu</a></li><br>
+		<li><a href="tworcy.html">O twórcach</a></li><br>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li><br>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li><br>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li><br>
+		<li><a href="utwory.html">Utwory z musicalu</a></li><br>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</b>
+	</ul>
+	</div>
+	
+	
+	
+	<div id="tresc" class="film">
+	<h3 align="center">Film</h3>
+	<center><img src="poster.jpg"/></center>
+	<p align="justify">Filmowa wersja musicalu Andrew Lloyd Webbera z 1986 (opartego na powieści Gastona Leroux'a z roku 1911) 
+	powstała w 2004 w reżyserii Joela Schumachera. Fabuła opowiada o losach młodej sopranistki, Christine Daaé oraz 
+	o chorobliwej miłości do niej tajemniczego Upiora Opery.</p>
+	<h6>Obsada</h6>
+	<center><img src="cast.jpg"/></center>
+	<ul type="circle">
+		<li>Upiór - Gerard Butler</li>
+		<li>Christine - Emmy Rossum</li>
+		<li>Raoul - Patrick Wilson</li>
+		<li>Carlotta - Minnie Driver</li>
+		<li>Firmin - Ciaran Hinds</li>
+		<li>Andre - Simon Callow</li>
+		<li>Madame Giry -  Miranda Richardson</li>
+		<li>Piangi - Victor McGuire</li>
+		<li>Meg Giry - Jennifer Ellison</li>
+	</ul>
+	<h3 align="center">Różnice między filmem a musicalem</h3>
+	<h6>W scenariuszu </h6>
+	<center><img src="scene.jpg"/></center>
+	<ul type="circle">
+		<li>główna akcja filmu ma miejsce w roku 1870, według musicalu w roku 1881. 
+		Prolog w filmie ma miejsce w roku 1919 (według książki w 1911 – roku powstania 
+		utworu). </li>
+		<li>scena upadku żyrandola została przeniesiona z finału aktu 1 musicalu na koniec utworu 
+		"Point Of No Return" (kulminacyjna scena filmu, gdy Upiór zostaje na scenie dosłownie 
+		zdemaskowany przez Christine) w 2. akcie.</li>
+		<li>dodano wątek spotkania w dzieciństwie Madame Giry i Upiora 
+		(co tłumaczy jego zamieszkanie w podziemiach)</li>
+		<li>dodano podróż Christine na cmentarz (co tłumaczy sposób pojawienia się tam Upiora)</li>
+		<li>rozbudowano zakończenie:
+			<ul type="disc">
+				<li>w musicalu Upiór siada na fotelu, okrywa się płaszczem i znika, 
+				pojawia się Meg Giry, podnosząc płaszcz znajduje tylko maskę,
+				zaś w filmie Upiór ucieka przez sekretne przejście </li>
+				<li>następuje dodatkowy epilog mający miejsce w roku 1919, (Raoul na grobie Christine)</li>
+			</ul>
+		</li>
+	</ul>
+	<h6>W ścieżce dźwiękowej</h6>
+	<center><img src="scene2.jpg"/></center>
+	<ul type="circle">
+		<li>usunięta Uwertura aktu 2 jako nic nie wnosząca do akcji</li>
+		<li>nowy utwór Journey To The Cemetery (rozbudowana podróż Christine na cmentarz)</li>
+		<li>dodatkowy finał rozbudowanego zakończenia (Raoul na cmentarzu w roku 1919),</li>
+		<li>dodatkowy utwór Learn To Be Lonely w czasie napisów końcowych</li>
+	</ul>
+	</div>
+				
+	
+
+</body>
+</html>

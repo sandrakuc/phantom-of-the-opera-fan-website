@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Phantasia </title>
+<meta charset="utf-8">
+<link rel="Shortcut icon" href="ikonka.png" />
+<link rel="stylesheet" type="text/css" href="szablon.css"/>
+<script language="JavaScript" type="text/javascript">
+function zegar(){
+    
+    now = new Date();
+    var hours = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    
+    if (hours < 10) hours = "0" + hours;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    
+    document.getElementById('czas').innerHTML = hours + ":" + min + ":" + sec;
+        
+    setTimeout("zegar()", 1000);
+}
+
+</script>
+<style type="text/css">
+p {padding: 20px;}
+h3{font-size: 24px;}
+h6{padding: 10px; font-size: 14px;}
+</style>
+</head>
+<body onload="javascript:zegar()">
+<span style="text-align:right; padding-top: 100px; color: white;"><h3 id="czas"></h3></span>
+
+	<div id="naglowek">
+	<h1><a href="index.html" style="color:white; text-decoration:none">Phantasia</a></h1>
+	</div>
+	
+	<div id="lista_gorna">
+	<ul class="gora" type="circle">
+		<li><a href="o_musicalu.html">O musicalu</a></li>
+		<li><a href="tworcy.html">O twórcach</a></li>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li>
+		<li><a href="utwory.html">Utwory z musicalu</a></li>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</ul>
+	</div>
+	
+	<div id="lista" class="broadway">
+	<ul class="bok" type="circle">
+	<b>
+		<li><a href="o_musicalu.html">O musicalu</a></li><br>
+		<li><a href="tworcy.html">O twórcach</a></li><br>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li><br>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li><br>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li><br>
+		<li><a href="utwory.html">Utwory z musicalu</a></li><br>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</b>
+	</ul>
+	</div>
+	
+	
+	
+	<div id="tresc" class="broadway">
+	<h3 align="center">West End</h3>
+	<center><img src="westend.png"/></center>
+	<p align="justify">Pokaz przedpremierowy miał miejsce w dniu 27 września 1986 w Her Majesty’s Theatre w Londynie 
+	(tam spektakl grany jest po dziś dzień). W dniu 9 października tego roku odbyła się oficjalna premiera z Michaelem Crawfordem 
+	i Sarah Brightman w rolach głównych. Ta inscenizacja Upiora jest obecnie drugim (po Les Miserables) najdłużej granym 
+	spektaklem w historii West Endu. 10 000 przedstawienie odbyło się 25 października 2010 na przedstawieniu popołudniowym.
+	Spektakl zdobył nagrodę Oliviera dla najlepszego musicalu w roku debiutu. Nagrodę tę zdobył również Michael Crawford.</p>
+	<h6>Obecna obsada</h6>
+	<ul type="circle">
+		<li>Upiór - Ben Lewis</li>
+		<li>Christine - Kelly Mathieson</li>
+		<li>Raoul - Jeremy Taylor</li>
+		<li>Carlotta - Lara Martins</li>
+		<li>Firmin - Sion Lloyd</li>
+		<li>Andre - Mark Oxtoby</li>
+		<li>Madame Giry - Jacinta Mulcahy</li>
+		<li>Piangi - Paul Ettore Tabone</li>
+		<li>Meg Giry - Georgia Ware</li>
+	</ul>
+	
+	<center><b><a href="https://officiallondontheatre.com/show/the-phantom-of-the-opera-98504/?month=04%2F18">
+	"Upiór w Operze" na deskach "Her Majesty's Theatre"</b></a></center>
+	
+	<h3 align="center">Broadway</h3>
+	<center><img src="broadway.jpg"/></center>
+	<p align="justify">Na Broadwayu spektakl miał premierę w dniu 26 stycznia 1988 na scenie Majestic Theatre. 
+	Crawford i Brightman ponownie byli premierowymi odtwórcami głównych ról. Spektakl jest rekordzistą Broadwayu,
+	grany nieprzerwanie do dziś zdetronizował 9 stycznia 2006 inne dzieło Webbera, Cats. W 2009 odbyło się 
+	dziewięciotysięczne przedstawienie. Spektakl zdobył Nagrodę Tony dla najlepszego musicalu w roku debiutu. 
+	Nagrodę zdobył także Michael Crawford.
+	<h6>Obecna obsada</h6>
+	<ul type="circle">
+		<li>Upiór - Peter Joback</li>
+		<li>Christine - Ali Ewoldt</li>
+		<li>Raoul - Rodney Ingram</li>
+		<li>Carlotta - Raquel Suarez Groen</li>
+		<li>Firmin - Craig Bennett</li>
+		<li>Madame Giry - Maree Johnson</li>
+		<li>Piangi - Carlton Moe</li>
+		<li>Meg Giry - Kara Klein</li>
+	</ul>
+	<center><b><a href="https://www.broadway.com/shows/the-phantom-of-the-opera/">
+	"Upiór w Operze" na Broadwayowskiej scenie</b></a></center>
+	</div>
+				
+	
+
+</body>
+</html>

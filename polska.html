@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Phantasia </title>
+<meta charset="utf-8">
+<link rel="Shortcut icon" href="ikonka.png" />
+<link rel="stylesheet" type="text/css" href="szablon.css"/>
+<script language="JavaScript" type="text/javascript">
+function zegar(){
+    
+    now = new Date();
+    var hours = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    
+    if (hours < 10) hours = "0" + hours;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    
+    document.getElementById('czas').innerHTML = hours + ":" + min + ":" + sec;
+        
+    setTimeout("zegar()", 1000);
+}
+
+</script>
+<style type="text/css">
+p {padding: 20px;}
+h3{font-size: 24px;}
+h6{padding: 10px; font-size: 14px;}
+</style>
+</head>
+<body onload="javascript:zegar()">
+<span style="text-align:right; padding-top: 100px; color: white;"><h3 id="czas"></h3></span>
+
+	<div id="naglowek">
+	<h1><a href="index.html" style="color:white; text-decoration:none">Phantasia</a></h1>
+	</div>
+	
+	<div id="lista_gorna">
+	<ul class="gora" type="circle">
+		<li><a href="o_musicalu.html">O musicalu</a></li>
+		<li><a href="tworcy.html">O twórcach</a></li>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li>
+		<li><a href="utwory.html">Utwory z musicalu</a></li>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</ul>
+	</div>
+	
+	<div id="lista" class="polska">
+	<ul class="bok" type="circle">
+	<b>
+		<li><a href="o_musicalu.html">O musicalu</a></li><br>
+		<li><a href="tworcy.html">O twórcach</a></li><br>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li><br>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li><br>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li><br>
+		<li><a href="utwory.html">Utwory z musicalu</a></li><br>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</b>
+	</ul>
+	</div>
+	
+	
+	
+	<div id="tresc" class="polska">
+	<h3 align="center">Warszawa</h3>
+	<center><img src="polska1.jpg"/></center>
+	<p align="justify">Polska wersja tego musicalu została wystawiona w Teatrze Muzycznym Roma w Warszawie w reżyserii
+	Wojciecha Kępczyńskiego, premiera miała miejsce 15 marca 2008 roku. Była to wersja non replica (z prawem do drobnych 
+	zmian w inscenizacji). W dniu 15 listopada 2008 na wieczornym przedstawieniu gościem był sam kompozytor, Andrew Lloyd Webber.
+	W dniu 13 lutego 2010 odbyło się pięćsetne przedstawienie. W dniu 6 czerwca 2010 miało miejsce ostatnie, 
+	572 przedstawienie w Romie.</p>
+	<h6>Obsada</h6>
+	<center><img src="polska2.jpg"/></center>
+	<ul type="circle">
+		<li>Upiór - Damian Aleksander / Paweł Podgórski / Tomasz Steciuk</li>
+		<li>Christine - Paulina Janczak / Kaja Mianowana / Edyta Krzemień</li>
+		<li>Raoul - Marcin Mroziński / Łukasz Talik / Piotr Domalewski</li>
+		<li>Carlotta - Barbara Melzer / Anna Gigiel / Monika Rowińska</li>
+		<li>Firmin - Jakub Szydłowski / Grzegorz Pierczyński</li>
+		<li>Andre - Wojciech Dmochowski / Wojciech Socha / Paweł Strymiński</li>
+		<li>Madame Giry -  Anna Sztejner / Katarzyna Walczak</li>
+		<li>Piangi - Tomasz Jedz / Zbigniew Ślarzyński</li>
+		<li>Meg Giry - Ida Nowakowska / Kamila Szmyt / Katarzyna Wach / Agnieszka Mrozińska/ Ewa Lachowicz</li>
+	</ul>
+	<h3 align="center">Białystok</h3>
+	<center><img src="polska3.jpg"/></center>
+	<p align="justify">24 maja 2013 odbyła się premiera drugiej inscenizacji musicalu w Polsce
+	na scenie Opery Podlaskiej we współpracy z warszawskim Teatrem Roma. Reżyseruje ponownie Wojciech Kępczyński, 
+	główne role śpiewają przede wszystkim wykonawcy z wcześniejszej inscenizacji warszawskiej. 
+	24 stycznia 2016 odbyło się setne przedstawienie Upiora w Białymstoku. 
+	Z tej okazji zorganizowany został Zlot Fanów Upiora. </p>
+	<h6>Obsada</h6>
+	<center><img src="polska4.jpg"/></center>
+	<ul type="circle">
+		<li>Upiór - Damian Aleksander/Łukasz Dziedzic/Tomasz Steciuk</li>
+		<li>Christine - Paulina Janczak/Edyta Krzemień/Kaja Mianowana</li>
+		<li>Raoul - Rafał Supiński/Łukasz Talik</li>
+		<li>Carlotta - Anna Wolfinger/Magdalena Masiewicz</li>
+		<li>Firmin - Grzegorz Pierczyński/Maciej Nerkowski</li>
+		<li>Gilles André - Tomasz Steciuk/Jakub Wocial</li>
+		<li>Madame Giry - Anita Steciuk/Joanna Trafas</li>
+		<li>Piangi -  Przemysław Borys/Krzysztof Stankiewicz</li>
+		<li>Meg Giry - Hanna Różankiewicz/Kaja Mianowana</li>
+		<br>
+		<br>
+	
+	<h3 align="center">Terminy spektakli w Filharmonii Podlaskiej:</h3>
+	<center>
+	<h6>Kwiecień 2018</h6>
+	<br>7, 8, 10, 11, 12, 13, 14, 15, 21, 22, 28, 29
+	<h6>Maj 2018</h6>
+	<br>4, 5, 6, 8, 9, 10, 11, 12, 13, 15, 16, 17, 19, 20, 26, 27, 29, 30, 31
+	<h6>Czerwiec 2018</h6>
+	<br>1, 2, 3, 9, 10, 15
+	<br>
+	<br>
+	<br>Bilety można zakupić tutaj:
+	<br><a href="http://www.oifp.eu/pl/bilety/kup-bilet.html"><button><img src="bilety.jpg"/></button></a></center>
+	</ul>
+	</div>
+				
+	
+
+</body>
+</html>

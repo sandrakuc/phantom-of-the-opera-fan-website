@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Phantasia </title>
+<meta charset="utf-8">
+<link rel="Shortcut icon" href="ikonka.png" />
+<link rel="stylesheet" type="text/css" href="szablon.css"/>
+<script language="JavaScript" type="text/javascript">
+function zegar(){
+    
+    now = new Date();
+    var hours = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    
+    if (hours < 10) hours = "0" + hours;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    
+    document.getElementById('czas').innerHTML = hours + ":" + min + ":" + sec;
+        
+    setTimeout("zegar()", 1000);
+}
+
+</script>
+<style type="text/css">
+p {padding: 20px;}
+h3{font-size: 24px;}
+h6{padding: 10px; font-size: 14px;}
+</style>
+</head>
+<body onload="javascript:zegar()">
+<span style="text-align:right; padding-top: 100px; color: white;"><h3 id="czas"></h3></span>
+
+	<div id="naglowek">
+	<h1><a href="index.html" style="color:white; text-decoration:none">Phantasia</a></h1>
+	</div>
+	
+	<div id="lista_gorna">
+	<ul class="gora" type="circle">
+		<li><a href="o_musicalu.html">O musicalu</a></li>
+		<li><a href="tworcy.html">O twórcach</a></li>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li>
+		<li><a href="utwory.html">Utwory z musicalu</a></li>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</ul>
+	</div>
+	<div id="lista" class="index">
+	<ul class="bok" type="circle">
+	<b>
+		<li><a href="o_musicalu.html">O musicalu</a></li><br>
+		<li><a href="tworcy.html">O twórcach</a></li><br>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li><br>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li><br>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li><br>
+		<li><a href="utwory.html">Utwory z musicalu</a></li><br>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</b>
+	</ul>
+	</div>
+	
+	
+	
+	<div id="tresc" class="index">
+	<h3 align="center">Witaj na stronie fanów musicalu "Upiór w operze!"</h3>
+	<br>
+	<p align="center">Tu znajdziesz wszystko, co powinien wiedzieć prawdziwy Phan!</p>
+	<br>
+	<center><img src="glowna.jpg" /><br><br>
+	<b><a href="http://www.thephantomoftheopera.com/">Link do oficjalnej strony "Upiora w Operze"</a></b></center>
+	</div>			
+	
+
+</body>
+</html>

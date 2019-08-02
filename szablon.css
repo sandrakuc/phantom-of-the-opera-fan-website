@@ -1,0 +1,152 @@
+body
+{
+background-color: black;
+width: 950px;
+margin-left: 20%;
+margin-right: 20%;
+}
+
+#naglowek
+{
+background-image: url('mask.jpg');
+height: 300px;
+width: 950px;
+color: white;
+font-size: 80px;
+text-align: bottom;
+font-family: "Edwardian Script ITC";
+text-decoration: none;
+padding-top: 20px;
+padding-bottom: -20px;
+}
+
+#lista_gorna{
+	background-color: darkgoldenrod;
+	color: white;
+	width: 950 px;
+	height: 120px;
+}
+
+#lista
+{
+background-color: darkred;
+float:left;
+width: 25%;
+}
+
+#tresc
+{
+background-color: rgb(58,58,58);
+float: left;
+width: 75%;
+}
+
+#tresc a{
+	color:black;
+	text-decoration:none;
+}
+
+#tresc a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+
+.index{
+	height: 700px;
+}
+
+.musical{
+	height: 4200px;
+}
+
+.tworcy{
+	height: 3300px;
+}
+
+.broadway{
+	height: 2000px;
+}
+
+.polska{
+	height: 3600px;
+}
+
+.film{
+	height: 2800px;
+}
+
+.utwory{
+	height: 10500px;
+}
+
+.formularz{
+	height: 1500px;
+}
+
+.bok{
+	list-style: none;
+}
+
+.bok a{
+	color:black;
+	text-decoration: none;	
+}
+
+.bok a:hover{
+	color:white;
+}
+
+.gora {
+float: left;
+width: 100%;
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.gora a {
+float: left;
+text-align: center;
+font-size: 1.2em;
+width: 100px;
+height: 100%;
+text-decoration: none;
+color: white;
+background-color: darkgoldenrod;
+padding: 10px 15px;
+margin: 0px 1px 1px 0px;
+}
+.gora a:hover {
+	color: black;
+}
+
+.odwiedzajacy {
+	padding: 20px 50px;
+}
+
+.odwiedzajacy .submit{
+	margin:0 0 10px 0;
+	padding:4px 7px;
+	font-size: 1.2em;
+	font-family: "Times new Roman";
+	width: 100px;
+	height: 50px;
+	background:darkgoldenrod;
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.odwiedzajacy .submit:hover{
+	color: black;
+	border: 2px solid black;
+}
+
+.odwiedzajacy .text{
+	border: 2px solid darkgoldenrod;
+	border-radius: 5px;
+	font-family: "Times New Roman";
+}
+
+

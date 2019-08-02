@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Phantasia </title>
+<meta charset="utf-8">
+<link rel="Shortcut icon" href="ikonka.png" />
+<link rel="stylesheet" type="text/css" href="szablon.css"/>
+<script language="JavaScript" type="text/javascript">
+function zegar(){
+    
+    now = new Date();
+    var hours = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    
+    if (hours < 10) hours = "0" + hours;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    
+    document.getElementById('czas').innerHTML = hours + ":" + min + ":" + sec;
+        
+    setTimeout("zegar()", 1000);
+}
+
+</script>
+<style type="text/css">
+p {padding: 20px;}
+h3{font-size: 24px;}
+h6{padding: 10px; font-size: 14px;}
+#tresc{height: 10500px;}
+#lista(height: 10500px;}
+</style>
+</head>
+<body onload="javascript:zegar()">
+<span style="text-align:right; padding-top: 100px; color: white;"><h3 id="czas"></h3></span>
+
+	<div id="naglowek">
+	<h1><a href="index.html" style="color:white; text-decoration:none">Phantasia</a></h1>
+	</div>
+	
+	<div id="lista_gorna">
+	<ul class="gora" type="circle">
+		<li><a href="o_musicalu.html">O musicalu</a></li>
+		<li><a href="tworcy.html">O twórcach</a></li>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li>
+		<li><a href="utwory.html">Utwory z musicalu</a></li>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</ul>
+	</div>
+	
+	<div id="lista" class="utwory">
+	<ul class="bok" type="circle">
+	<b>
+		<li><a href="o_musicalu.html">O musicalu</a></li><br>
+		<li><a href="tworcy.html">O twórcach</a></li><br>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li><br>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li><br>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li><br>
+		<li><a href="utwory.html">Utwory z musicalu</a></li><br>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</b>
+	</ul>
+	</div>
+	
+	
+	
+	<div id="tresc" class="utwory">
+	<center>
+	<h3>Sztandarowe utwory z musicalu (wersja filmowa)!</h3>
+	
+	<p>Piosenka tytułowa - "Phantom of the Opera"</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/-JaeBxYCI9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Think of Me"</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/XfTgCPUJwRk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Angel of Music" </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/yh3_ps50yrg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Music of the Night" </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/77umP7IRxD4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Wishing You Were Somehow Here Again" </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/74S7EMUAKFs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"All I Ask of You" </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Zy1lWiHHHFY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"The Point of No Return" </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/iqoilIRV9tk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Overture" </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ppSvlawM43A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<h3>Polskie wersje utworów (Teatr "Roma")</h3>
+	
+	<p>"Upiór w operze" </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/NRNygY-FkyI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Wspomnij mnie"</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/YYAd0jHwpi0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Anioł muzyki"</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Sd8EIwC7Pjo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Noc muzykę gra"</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/qahsQH9RyCw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Szkoda, że cię nie ma ze mną już"</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/MhgJwDksWYg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"O tyle proszę cię"</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/1S05b65Cdho" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>"Stąd odwrotu nie ma już"</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Z8FLyWO4Yfw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<h3>Kilka dobrych coverów</h3>
+	
+	<h6>Medley's</h6>
+	
+	<p>Lindsey Stirling </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/TCL94-MsxYc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Nick Pitera </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/3vRHgxviZJk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<h6>Piosenka tytułowa</h6>
+	
+	
+	<p>Nightwish</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/8VgLKXD-BoY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Audrey & Justin Kerekes </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ybBX6ynD_TU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Prague Cello Quartet</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/qpbX7SbXOtU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<h6>Inne</h6>
+	
+	<p>Josh Groban & Kelly Clarkson - All I Ask Of You</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/AIWZfMWWvPU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Jonathan Young & Malinda Kathleen Reese - All I Ask Of You</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/DUhBEWbH3qE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Ewa Łobaczewska & Janek Traczyk - Wspomnij mnie</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/6r8-IxAGN_0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Adrian Wiśniewski - Noc muzykę gra</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/rS6WK6_zp7o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	
+	</center>
+	</div>
+				
+	
+
+</body>
+</html>

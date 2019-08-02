@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Phantasia </title>
+<meta charset="utf-8">
+<link rel="Shortcut icon" href="ikonka.png" />
+<link rel="stylesheet" type="text/css" href="szablon.css"/>
+<script language="JavaScript" type="text/javascript">
+function zegar(){
+    
+    now = new Date();
+    var hours = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    
+    if (hours < 10) hours = "0" + hours;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    
+    document.getElementById('czas').innerHTML = hours + ":" + min + ":" + sec;
+        
+    setTimeout("zegar()", 1000);
+}
+
+</script>
+<style type="text/css">
+p {padding: 20px;}
+h3{font-size: 24px;}
+h6{padding: 10px; font-size: 14px;}
+</style>
+</head>
+<body onload="javascript:zegar()">
+<span style="text-align:right; padding-top: 100px; color: white;"><h3 id="czas"></h3></span>
+
+	<div id="naglowek">
+	<h1><a href="index.html" style="color:white; text-decoration:none">Phantasia</a></h1>
+	</div>
+	
+	<div id="lista_gorna">
+	<ul class="gora" type="circle">
+		<li><a href="o_musicalu.html">O musicalu</a></li>
+		<li><a href="tworcy.html">O twórcach</a></li>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li>
+		<li><a href="utwory.html">Utwory z musicalu</a></li>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</ul>
+	</div>
+	
+	<div id="lista" class="tworcy">
+	<ul class="bok" type="circle">
+	<b>
+		<li><a href="o_musicalu.html">O musicalu</a></li><br>
+		<li><a href="tworcy.html">O twórcach</a></li><br>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li><br>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li><br>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li><br>
+		<li><a href="utwory.html">Utwory z musicalu</a></li><br>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</b>
+	</ul>
+	</div>
+	
+	
+	
+	<div id="tresc" class="tworcy">
+	<h3 align="center">Twórcy</h3>
+	<h6>Gaston Leroux</h6>
+	<center><img src="leroux.jpg"/></center>
+	<p align="justify">Ur. 6 maja 1868 w Paryżu, zm. 15 kwietnia 1927 w Nicei, pisarz i reporter francuski, 
+	klasyk tzw. literatury weird fiction. Z zawodu prawnik. Pisał głównie powieści detektywistyczne. 
+	Jego pozycja w literaturze francuskiej XIX wieku porównywana bywa do Edgara Allana Poego i Arthura Conana Doyle'a. 
+	Najsłynniejszą powieścią Lerouxa jest "Upiór w operze".</p>
+	<h6>Andrew Lloyd Webber</h6>
+	<center><img src="webber.jpg"/></center>
+	<p align="justify">Ur. 22 marca 1948 w Londynie, brytyjski kompozytor, producent i działacz polityczny, 
+	twórca muzyki do najbardziej kasowych w historii musicali, w tym m.in. spektakli "Koty" i "Upiór w operze". 
+	W 1997 roku Webber uhonorowany został Oscarem za najlepszą piosenkę do filmu "Evita". 
+	</p>
+	<h6>Charles Hart</h6>
+	<center><img src="hart.jpg"/></center>
+	<p align="justify">Ur. 3 czerwca 1961, brytyjski tekściarz, autor tekstów i muzyk. Najbardziej znany jest z pisania 
+	tekstów do utworów Andrew Lloyd Webbera i jego opery "Upiór w Operze" oraz pisania tekstów do 
+	"Bend It Like Beckham the Musical". Jest także współautorem (wraz z Donem Blackiem ) 
+	tekstów do musicalu "Aspects of Love" Lloyda Webbera z 1989 roku. 
+	Hart przepisał też tekst Glenna Slatera do "Love Never Dies", kontynuacji "Upiora...".</p>
+	<h6>Richard Stilgoe</h6>
+	<center><img src="stilgoe.jpg"/></center>
+	<p align="justify">Ur. 28 marca 1943, jest brytyjskim autorem tekstów piosenek oraz komikiem. 
+	Jego najbardziej znanym dziełem jest współautorstwo libretta musicalu "Upiór w operze".</p>
+	<h6>Cameron Mackintosh</h6>
+	<center><img src="mackintosh.jpg"/></center>
+	<p align="justify">Ur. 17 października 1946, brytyjski producent teatralny, współtwórca najbardziej kasowych w historii
+	musicali: "Kotów", "Upiora w Operze", "Les Misérables".</p>
+	<h6>Joel Schumacher</h6>
+	<center><img src="schumacher.jpg"/></center>
+	<p align="justify">Ur. 29 sierpnia 1939 w Nowym Jorku, amerykański reżyser, scenarzysta i producent filmowy. 
+	Najbardziej znany z filmów o Batmanie oraz ekranizacji prozy Johna Grishama, 
+	który twierdził, że nikt, tak jak Joel Schumacher, nie potrafi przenieść jego książek na ekran. 
+	Jego kolejnym znanym dziełem jest ekranizacja musicalu "Upiór w Operze".</p>
+	</div>
+				
+	
+
+</body>
+</html>

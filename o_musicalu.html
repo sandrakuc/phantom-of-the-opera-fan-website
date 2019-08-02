@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Phantasia </title>
+<meta charset="utf-8">
+<link rel="Shortcut icon" href="ikonka.png" />
+<link rel="stylesheet" type="text/css" href="szablon.css"/>
+<script language="JavaScript" type="text/javascript">
+function zegar(){
+    
+    now = new Date();
+    var hours = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    
+    if (hours < 10) hours = "0" + hours;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    
+    document.getElementById('czas').innerHTML = hours + ":" + min + ":" + sec;
+        
+    setTimeout("zegar()", 1000);
+}
+
+</script>
+<style type="text/css">
+p {padding: 20px;}
+h3{font-size: 24px;}
+h6{padding: 10px; font-size: 14px;}
+</style>
+</head>
+<body onload="javascript:zegar()">
+<span style="text-align:right; padding-top: 100px; color: white;"><h3 id="czas"></h3></span>
+
+	<div id="naglowek">
+	<h1><a href="index.html" style="color:white; text-decoration:none">Phantasia</a></h1>
+	</div>
+	
+	<div id="lista_gorna">
+	<ul class="gora" type="circle">
+		<li><a href="o_musicalu.html">O musicalu</a></li>
+		<li><a href="tworcy.html">O twórcach</a></li>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li>
+		<li><a href="utwory.html">Utwory z musicalu</a></li>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</ul>
+	</div>
+	
+	<div id="lista" class="musical">
+	<ul class="bok" type="circle">
+	<b>
+		<li><a href="o_musicalu.html">O musicalu</a></li><br>
+		<li><a href="tworcy.html">O twórcach</a></li><br>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li><br>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li><br>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li><br>
+		<li><a href="utwory.html">Utwory z musicalu</a></li><br>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</b>
+	</ul>
+	</div>
+	
+	
+	
+	<div id="tresc" class="musical">
+	<h3 align="center">O musicalu</h3>
+	
+	<center><img src="o_musicalu1.jpg" /></center>
+	
+	<p align="justify">Upiór w operze (ang. The Phantom of the Opera) to musical stworzony w 1986 przez Andrew Lloyd Webbera (muzyka)
+	oraz Charlesa Harta i Richarda Stilgoe (libretto).Fabuła musicalu jest osnuta na kanwie powieści Gastona Leroux
+	z 1911 roku i koncentruje się na losach młodej sopranistki Christine Daaé, która staje się obsesją tajemniczego
+	zdeformowanego geniusza muzycznego, znanego jako Upiór Opery. Spektakl miał światową prapremierę w październiku 1986
+	na deskach londyńskiego teatru Her Majesty’s Theatre.</p>
+	<h3 align="center">Skrót fabuły</h3>
+	<center>
+	<a href="#prolog"><b>Prolog</a><br><br>
+	<a href="#akt_i">Akt I </a><br><br>
+	<a href="#akt_ii">Akt II </a></b><br><br><br>
+	</center>
+	<center><img src="o_musicalu2.jpg"/>
+	<a name = "prolog"></a>
+	<h6>Prolog</h6>
+	<center><img src="o_musicalu5.jpg"/>
+	<p align="justify">Paryż, rok 1911. Na scenie Opera Populaire trwa aukcja dekoracji teatralnych. Stary Raoul, 
+	wicehrabia de Chagny, kupuje pozytywkę z małpką. Numer 666 to żyrandol, który przed laty spowodował słynną katastrofę
+	w „tajemniczej historii Upiora w operze”. Zapalony żyrandol powraca na swoje dawne miejsce pod sufitem teatru... 
+	(Uwertura)</p>
+	<a name = "akt_i"></a>
+	<h6>Akt I</h6>
+	<center><img src="o_musicalu4.jpg"/>
+	<p align="justify">Opera Populaire wiele lat wcześniej. Trwa próba do opery „Hannibal”. 
+	Dotychczasowy właściciel oznajmia zespołowi, że sprzedał teatr panom Firmin i André. 
+	Nowi dyrektorzy przyglądają się tancerkom – zwłaszcza młodej Christine Daaé. Proszą primadonnę Carlottę
+	o wykonanie arii z III aktu opery (Wspomnij mnie). Jej popis przerywa oberwanie kurtyny. Zespół podejrzewa,
+	że za wypadkiem stoi tajemniczy „duch opery”. Carlotta ma dosyć podobnych „wypadków” i wychodzi. 
+	Zastępuje ją Christine i śpiewa nadspodziewanie dobrze. To podobno zasługa jej zagadkowego „mistrza” (Anioł Muzyki).
+	Po premierze do garderoby nowej gwiazdy przychodzi Raoul, wicehrabia de Chagny, nowy patron teatru. 
+	Okazuje się, że oboje znali się w dzieciństwie. Po wyjściu Raoula ujawnia się zazdrosny „mistrz” w masce 
+	i zabiera dziewczynę do swojego podziemnego królestwa (Upiór w operze). Christine omdlewa po zobaczeniu zagadkowego
+	odbicia w lustrze (Noc muzykę gra). Budzi ją muzyka Upiora komponującego przy organach i – zafascynowana – zrywa 
+	maskę skrywającą jego twarz. Rozwścieczony początkowo Upiór skarży się na los, który uczynił z niego odmieńca 
+	(Strach to wróg miłości). Tymczasem na scenie Buquet – szef maszynistów – straszy tancerki opowieściami 
+	o Upiorze i jego groźnym lasso (Czarodziejskie lasso). W rezultacie spotkania Christine z Upiorem obaj 
+	dyrektorzy zaczynają dostawać niejasne listy, w których „duch opery” domaga się Loży nr 5 do swojej 
+	wyłącznej dyspozycji, a co więcej zaleca zmiany w obsadzie przygotowywanej opery „Il Muto”. 
+	Christine ma wystąpić w głównej roli, Carlotta zaś dostać rolę niemą (Listy I). Urażona diwa posądza o spisek 
+	Christine i Raoula, ale udaje się jej odwrócić bieg wydarzeń, kiedy grozi, że odejdzie z teatru wraz z mężem 
+	tenorem Piangim. Zdezorientowani dyrektorzy próbują udobruchać gwiazdorską parę (Primadonna). 
+	Podczas premiery Raoul prowokacyjnie zajmuje miejsce w Loży nr 5. Przedstawienie przerywa ingerencja Upiora, 
+	który sprawia, że Carlotta traci nagle głos (Mój mąż jest śmiechu wart). W powstałym zamieszaniu na scenie zostaje
+	znaleziony trup Buqueta. Christine i Raoul chronią się na dachu budynku. Dziewczyna przyznaje się, że była 
+	w kryjówce Upiora. Wicehrabia jej nie dowierza, ale oferuje opiekę i wyznaje miłość (O tyle proszę cię). 
+	Okazuje się, że są podsłuchiwani przez Upiora, który obiecuje zemstę. Jego rozpacz zmienia się we wściekłość
+	– sprawia, że podczas ukłonów po „Il Muto” na scenę spada żyrandol.</p>
+	<a name = "akt_ii"></a>
+	<h6>Akt II</h6>
+	<center><img src="o_musicalu3.png"/>
+	<p align="justify">Minęło kilka miesięcy. Śmietanka towarzyska Paryża pojawiła się na balu maskowym w operze 
+	(Maskarada). Christine i Raoul są zaręczeni, ale dziewczyna nalega na utrzymanie tego w tajemnicy. 
+	Zabawę przerywa pojawienie się Upiora, który wręcza dyrektorom partyturę swojej opery „Don Juan tryumfuje” 
+	i żąda wystawienia jej przez teatr (Nieproszony gość). Utrzymuje, że dziewczyna nadal należy do niego. 
+	Raoulowi udaje się dowiedzieć od Madame Giry, nauczycielki tańca, kim naprawdę jest Upiór: to geniusz 
+	o zdeformowanej twarzy – od lat zamieszkuje podziemia opery, gdzie komponuje muzykę i prowadzi eksperymenty 
+	z dziedziny inżynierii. Realizacja żądań Upiora wywołuje zamieszanie, które potęgują jego kolejne listy 
+	ze wskazówkami dotyczącymi obsady (Listy II). Christine nie chce mieć nic z wspólnego z intrygami towarzyszącymi 
+	przygotowaniom do nowej inscenizacji. Tymczasem Raoul proponuje zastawienie pułapki na Upiora podczas premiery 
+	„Don Juana” z Christine jako przynętą. Dziewczyna jest zdumiona propozycją narzeczonego i początkowo odmawia.
+	Ulega jednak, przekonana, że to jedyna szansa na schwytanie „ducha opery” (Tak czy tak jest źle). Próby do nowej 
+	opery posuwają się opornie, jej materiał muzyczny jest co najmniej niekonwencjonalny. Najgorzej radzi sobie 
+	Piangi (Próba „Don Juan tryumfuje”). Rozdarta Christine udaje się na grób ojca, gdzie postanawia zrzucić 
+	z siebie cienie przeszłości (Szkoda, że cię nie ma). Na cmentarzu dochodzi do otwartej walki pomiędzy Upiorem 
+	i Raoulem (Dziecko, ty jesteś bezbronna). Upiór ponownie wcielił się w Anioła Muzyki, chcąc odzyskać dziewczynę. 
+	Christine ucieka z narzeczonym, Upiór przysięga zemstę. W dniu premiery wspierany przez policję Raoul zastawia 
+	w teatrze pułapkę („Don Juan tryumfuje”). W kulminacyjnym duecie towarzyszy Christine zamaskowana postać 
+	(Stąd odwrotu nie ma już). To nie może być Piangi. Dziewczyna domyśla się prawdy i demaskuje Upiora, 
+	zrywając mu maskę na oczach publiczności. Kiedy oboje znikają, Carlotta odkrywa martwe ciało Piangiego. 
+	Rozjuszony tłum rusza w pościg za Upiorem, aby pomścić śmierć jego ofiar. Madame Giry podprowadza Raoula pod 
+	kryjówkę Upiora. Najważniejsze, by „przed nosem trzymać dłoń” – to jedyna ochrona przed lassem... Kryjówka na 
+	podziemnym jeziorze staje się miejscem ostatniej konfrontacji. Christine, zmuszona przez Upiora do przywdziania 
+	ślubnej sukni, spodziewa się najgorszego (Loch rozpaczy). Upiór jest przekonany, że dziewczyna nie jest 
+	w stanie go pokochać ze względu na szpetotę twarzy. Christine wyjawia, że dla niej wygląd nie jest najważniejszy
+	– liczy się wnętrze człowieka. Raoul pada ofiarą lasso w chwili przybycia do kryjówki. Upiór stawia ultimatum:
+	życie wicehrabiego za dozgonną miłość Christine. Raoul błaga dziewczynę, aby nie ulegała szantażowi. Gotów jest 
+	oddać życie za jej wolność (To zbrodniarza trop). Christine daje wyraz współczuciu dla Upiora i... całuje go. 
+	Zdumiony tym gestem Upiór pozwala obojgu narzeczonym odpłynąć wolno na chwilę przed wtargnięciem tłumu. 
+	Dziwnym trafem odzywa się nagle pozytywka z małpką...</p>
+	</div>		
+	
+
+</body>
+</html>

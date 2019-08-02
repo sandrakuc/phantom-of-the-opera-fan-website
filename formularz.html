@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Phantasia </title>
+<meta charset="utf-8">
+<link rel="Shortcut icon" href="ikonka.png" />
+<link rel="stylesheet" type="text/css" href="szablon.css"/>
+<script language="JavaScript" type="text/javascript">
+function zegar(){
+    
+    now = new Date();
+    var hours = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    
+    if (hours < 10) hours = "0" + hours;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    
+    document.getElementById('czas').innerHTML = hours + ":" + min + ":" + sec;
+        
+    setTimeout("zegar()", 1000);
+}
+
+function komunikat(){
+	alert('Dane zostały wysłane');
+}
+
+</script>
+<style type="text/css">
+p {padding: 20px;}
+h3{font-size: 24px;}
+h6{padding: 10px; font-size: 14px;}
+</style>
+</head>
+<body onload="javascript:zegar()">
+<span style="text-align:right; padding-top: 100px; color: white;"><h3 id="czas"></h3></span>
+
+	<div id="naglowek">
+	<h1><a href="index.html" style="color:white; text-decoration:none">Phantasia</a></h1>
+	</div>
+	
+	<div id="lista_gorna">
+	<ul class="gora" type="circle">
+		<li><a href="o_musicalu.html">O musicalu</a></li>
+		<li><a href="tworcy.html">O twórcach</a></li>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li>
+		<li><a href="utwory.html">Utwory z musicalu</a></li>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</ul>
+	</div>
+	
+	<div id="lista" class="formularz">
+	<ul class="bok" type="circle">
+	<b>
+		<li><a href="o_musicalu.html">O musicalu</a></li><br>
+		<li><a href="tworcy.html">O twórcach</a></li><br>
+		<li><a href="broadway.html">"Upiór w operze" na Broadwayu i West Endzie</a></li><br>
+		<li><a href="polska.html">"Upiór w operze" na polskiej scenie </a></li><br>
+		<li><a href="film.html">"Upiór w operze" na ekranie </a></li><br>
+		<li><a href="utwory.html">Utwory z musicalu</a></li><br>
+		<li><a href="formularz.html">Księga gości</a></li>
+	</b>
+	</ul>
+	</div>
+	
+	
+	
+	<div id="tresc" class="formularz">
+	<h3 align="center">Zostaw ślad po sobie w Księdze Gości :)</h3>
+	<center><img src="manga.jpg"/></center>
+	<form class="odwiedzajacy" action="mailto:fantasmadellopera@onet.pl" method="post" enctype="text/plain" onsubmit="komunikat();">
+	<center>
+	<h4>Płeć:</h4>
+	<input type="radio" name="gender" value="Kobieta">Kobieta<br>
+	<input type="radio" name="gender" value="Mężczyzna">Mężczyzna<br>
+	<h4>Województwo:</h4>
+	<select class="text" name="voivodeship">
+		<option>dolnośląskie</option>
+		<option>kujawsko-pomorskie</option>
+		<option>lubelskie</option>
+		<option>lubuskie</option>
+		<option>łódzkie</option>
+		<option>małopolskie</option>
+		<option>mazowieckie</option>
+		<option>opolskie</option>
+		<option>podkarpackie</option>
+		<option>podlaskie</option>
+		<option>pomorskie</option>
+		<option>śląskie</option>
+		<option>świętokrzyskie</option>
+		<option>warmińsko-mazurskie</option>
+		<option>wielkopolskie</option>
+		<option>zachodniopomorskie</option>
+	</select><br>
+	<h4>W jaki sposób zobaczyłeś/aś "Upiora w Operze"?</h4>
+	<input class="text" type="checkbox" name="seen" value="spektakl">Byłem/am na spektaklu<br>
+	<input class="text" type="checkbox" name="seen" value="film">Oglądałem/am film<br>
+	<input class="text" type="checkbox" name="seen" value="powiesc">Czytałem/am powieść Leroux'a<br>
+	<input class="text" type="checkbox" name="seen" value="utwory">Słyszałem/am utwory <br>
+	<input class="text" type="checkbox" name="seen" value="trailer">Widziałem/am urywki filmu lub trailer<br>
+	<h4>Zostaw wiadomość:</h4>
+	<textarea class="text" name="message" cols="50" rows="10">Twoja wiadomość...</textarea><br><br>
+	<h4>Podaj swój Nick:</h4>
+	<input class="text" name="nick"><br>
+	<h4>Podaj swój adres e-mail:</h4>
+	<input class="text" name="mail"><br><br><br>
+	<input class="submit" type="submit" value="Wyślij" />
+	</center>
+	</form>
+	</div>
+				
+	
+
+</body>
+</html>
